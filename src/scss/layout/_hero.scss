@@ -1,0 +1,64 @@
+.hero {
+    background-image: url(../images/header.jpg);
+    background-size: 200%;
+    background-position: center;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+
+&__rectangle {
+    margin: 0 auto;
+    text-align: center;
+
+    @media all and (min-width: 900px){
+        text-align: left;
+        height: 112px;
+        width: 430px;
+        margin-left:147px;
+    }
+    @media all and (min-width: 1728px){
+        margin-left:280px;
+    }
+
+}
+
+&__title{
+    color: $color-spruce;
+    padding: 62px 0;
+    font-size: $size-big-title;
+
+    @media all and (min-width: 900px){
+        font-size: $size-hero-title-tablet;
+        padding: 24px 0;
+    
+    }
+    @media all and (min-width: 1728px){
+        padding-top: 0;
+    }
+
+}
+}
+
+.button-buy{
+    color: $color-white;
+    background-color: $color-spruce;
+    font-size: $size-normal-text;
+    width: 11rem;
+    height: 3rem;
+    text-decoration: none;
+    padding: 12px 24px;
+    margin-bottom: 76px;
+    border: none;
+    margin-top: 50px;
+
+    &:hover {
+        color: $color-orange;
+        border-radius: 1.5rem;
+      }
+
+}
+

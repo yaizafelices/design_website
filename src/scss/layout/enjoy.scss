@@ -1,0 +1,55 @@
+ /*UTILIZAR GRID*/
+ 
+ 
+ .enjoy {
+    background-color: $color-light-grey;
+    display: grid;
+    grid-template-rows: 339px 304px;
+    color: $color-spruce;
+
+    @media all and (min-width: 900px){
+        grid-template-rows: 339px 474px;
+    }
+    @media all and (min-width: 1728px){
+        grid-template-rows: 571px;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+
+
+.decoration {
+    text-align: center;
+    padding: 87px 27px 92px 27px;
+
+    &__title{
+        font-size: $size-big-title;
+        @media all and (min-width: 1728px){
+            font-size: $size-big-title-tablet;
+
+        }
+
+    }
+
+
+    &__text {
+        padding-bottom: 40px;
+        font-size: $size-small-text;
+        @media all and (min-width: 1728px){
+            font-size: $size-normal-text;
+        }
+    }
+    @media all and (min-width: 1728px){
+        text-align: left;
+        width: 281px;
+        padding: 176px 27px 92px 280px;
+ 
+    }
+
+}
+.image-decoration {
+background-image: url(../images/creando-espacios.jpg);
+    background-position: center;
+    background-size: 150%;
+    background-repeat: no-repeat;
+}
